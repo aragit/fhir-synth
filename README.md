@@ -8,6 +8,11 @@
 [![Coverage](https://img.shields.io/badge/coverage-99%25-brightgreen?style=for-the-badge)](https://github.com/aragit/fhir-synth)
 [![Last Commit](https://img.shields.io/github/last-commit/aragit/fhir-synth?style=for-the-badge&logo=git)](https://github.com/aragit/fhir-synth/commits/main)
 [![Repo Size](https://img.shields.io/github/repo-size/aragit/fhir-synth?style=for-the-badge&logo=github)](https://github.com/aragit/fhir-synth)
+[![Pydantic](https://img.shields.io/badge/Pydantic-v2-red?style=for-the-badge&logo=pydantic)](https://docs.pydantic.dev)
+[![jsonschema](https://img.shields.io/badge/jsonschema-4.20%2B-blue?style=for-the-badge)](https://python-jsonschema.readthedocs.io)
+[![FHIR R4](https://img.shields.io/badge/FHIR-R4-orange?style=for-the-badge)](https://hl7.org/fhir/R4)
+[![setuptools](https://img.shields.io/badge/setuptools-build%20system-purple?style=for-the-badge&logo=python)](https://setuptools.pypa.io)
+[![Hash: MD5](https://img.shields.io/badge/determinism-MD5%20UUIDs-blueviolet?style=for-the-badge)](https://docs.python.org/3/library/hashlib.html)
 
 </div>
 

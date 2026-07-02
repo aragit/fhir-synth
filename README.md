@@ -3,11 +3,6 @@
 # fhir-synth — Deterministic FHIR R4 Synthetic Data Generator
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue?style=for-the-badge&logo=python)](https://python.org)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
-[![CI](https://img.shields.io/github/actions/workflow/status/aragit/fhir-synth/ci.yml?style=for-the-badge&logo=github&label=CI)](https://github.com/aragit/fhir-synth/actions)
-[![Coverage](https://img.shields.io/badge/coverage-99%25-brightgreen?style=for-the-badge)](https://github.com/aragit/fhir-synth)
-[![Last Commit](https://img.shields.io/github/last-commit/aragit/fhir-synth?style=for-the-badge&logo=git)](https://github.com/aragit/fhir-synth/commits/main)
-[![Repo Size](https://img.shields.io/github/repo-size/aragit/fhir-synth?style=for-the-badge&logo=github)](https://github.com/aragit/fhir-synth)
 [![Pydantic](https://img.shields.io/badge/Pydantic-v2-red?style=for-the-badge&logo=pydantic)](https://docs.pydantic.dev)
 [![jsonschema](https://img.shields.io/badge/jsonschema-4.20%2B-blue?style=for-the-badge)](https://python-jsonschema.readthedocs.io)
 [![FHIR R4](https://img.shields.io/badge/FHIR-R4-orange?style=for-the-badge)](https://hl7.org/fhir/R4)

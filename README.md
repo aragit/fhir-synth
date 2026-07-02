@@ -130,12 +130,42 @@ cd fhir-synth
 pip install -e .
 ```
 
-### CLI — 10 seconds to synthetic data
+### See It In Action
 
 ```bash
-# Generate a 4-hour ICU sepsis trajectory
 python -m fhir_synth --scenario icu_sepsis --duration 240 --seed 42 --output pretty
 ```
+
+Sample output (truncated):
+
+```
+Patient:           pt-42
+Gender:            male
+Birth Date:        1940-01-15
+Duration:          240 min
+Seed:              42
+Scenario:          icu_sepsis
+Events:            240
+Backends:          observation, patient, encounter
+---
+t=0    HR: 72.3   SBP: 119.8  DBP: 79.1   SpO2: 98.0  RR: 16.2   Temp: 36.5
+t=30   HR: 87.5   SBP: 120.3  DBP: 80.0   SpO2: 96.5  RR: 22.1   Temp: 36.8
+t=60   HR: 102.0  SBP: 120.1  DBP: 80.2   SpO2: 95.2  RR: 28.0   Temp: 37.1
+t=90   HR: 114.2  SBP: 110.8  DBP: 74.3   SpO2: 93.8  RR: 30.5   Temp: 37.8
+t=120  HR: 126.5  SBP: 99.4   DBP: 66.1   SpO2: 90.5  RR: 33.2   Temp: 38.5
+t=150  HR: 142.8  SBP: 82.7   DBP: 54.8   SpO2: 87.6  RR: 36.0   Temp: 39.2
+t=180  HR: 155.3  SBP: 74.2   DBP: 46.3   SpO2: 84.8  RR: 38.5   Temp: 39.6
+t=210  HR: 158.1  SBP: 71.5   DBP: 42.0   SpO2: 83.1  RR: 39.2   Temp: 39.8
+t=240  HR: 159.8  SBP: 70.3   DBP: 40.5   SpO2: 82.2  RR: 39.8   Temp: 39.9
+---
+Diagnoses:  A41.9 (Sepsis, unspecified) @ t=30,
+            R65.20 (Severe sepsis w/o shock) @ t=60
+Procedure:  03EO3ZZ (Central line placement) @ t=90
+```
+
+Output is a full FHIR R4 Bundle with Patient, Encounter, and 240 Observations (one per minute). Every resource validates against the HL7 FHIR R4 schema — no invalid FHIR escapes.
+
+### CLI — more examples
 
 ```bash
 # List all available scenarios

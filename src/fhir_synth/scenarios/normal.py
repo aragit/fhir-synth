@@ -29,7 +29,7 @@ def build(
         )
 
     return ClinicalTimeline(
-        patient_id=f"generic-{seed or 0}",
+        patient_id=f"normal-{seed or 0}",
         start_time=start_time,
         events=events,
         seed=seed,
